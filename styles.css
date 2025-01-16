@@ -1,0 +1,33 @@
+body {
+    background-image: url("imagens/86ffb87572d657f335cd7cd828c70de3.jpg");
+    background-size: cover; /* A imagem cobrirá toda a tela */
+    background-position: center; /* A imagem será centralizada */
+    background-attachment: fixed; /* Fixar a imagem ao rolar a página */
+    margin: 0; /* Remove margens para que a imagem ocupe toda a tela */
+    height: 100vh; /* Garantir que o corpo ocupe a altura total da tela */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    height: 100%;
+}
+
+form{
+    width: 100px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
+h3{
+    width: 235px;
+}

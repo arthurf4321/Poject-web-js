@@ -1,7 +1,0 @@
-body{
-
-    background-image: url("imagens/photo-1622793139910-e261be0b30a4.avif");
-    background-size: cover; /* A imagem cobrirá toda a tela */
-    background-position: center; /* A imagem será centralizada */
-    background-attachment: fixed
-}
