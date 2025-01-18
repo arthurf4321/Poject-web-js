@@ -1,42 +1,83 @@
+/* Corpo da página */
 body {
-    background-image: url("imagens/86ffb87572d657f335cd7cd828c70de3.jpg");
+    background-image: url("imagens/1920x1080-black-bp2ccz1sjz5t1qem.jpg");
     background-size: cover; /* A imagem cobrirá toda a tela */
     background-position: center; /* A imagem será centralizada */
-    background-attachment: fixed; /* Fixar a imagem ao rolar a página */
-    margin: 0; /* Remove margens para que a imagem ocupe toda a tela */
-    height: 100vh; /* Garantir que o corpo ocupe a altura total da tela */
+    background-attachment: fixed; /* A imagem ficará fixa ao rolar a página */
+    margin: 0; /* Remove as margens padrão */
+    height: 100vh; /* Ocupa a altura total da tela */
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o formulário horizontalmente */
+    align-items: center; /* Centraliza o formulário verticalmente */
+    font-family: 'Arial', sans-serif; /* Definindo a fonte */
 }
 
-*{
+/* Estilo para todos os elementos */
+* {
     box-sizing: border-box;
 }
 
-body{
-    width: 90%;
-    height: 100%;
-}
-
-form{
-    width: 100px;
-    margin: 200px auto;
+/* Formulário */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    padding: 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave para dar um efeito de elevação */
+    width: 300px; /* Largura do formulário */
     text-align: center;
 }
 
-input{
-    display: block;
-    margin: 10px auto;
-    width: 250px;
-    height: 30px;
+/* Título do formulário */
+h3 {
+    color: #333; /* Cor escura para o título */
+    font-size: 2em; /* Aumenta o tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
-#buttonLogin{
-    display: block;
-    margin: 10px auto;
-    width: 250px;
-    height: 30px;
-    cursor: pointer;
+/* Estilo dos campos de entrada (inputs) */
+input {
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
+    padding: 12px; /* Adiciona um pouco de espaço interno */
+    margin: 10px 0; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+    background-color: #f9f9f9; /* Fundo claro */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
 }
 
-h3{
-    width: 235px;
+/* Efeito de foco nos inputs */
+input:focus {
+    border-color: #4CAF50; /* Cor da borda muda quando o input é focado */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Estilo do botão de login */
+#buttonLogin button {
+    width: 100%; /* O botão ocupa toda a largura disponível */
+    padding: 12px; /* Adiciona um pouco de espaço interno */
+    background-color: #4CAF50; /* Cor verde para o botão */
+    color: white; /* Cor do texto no botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2em; /* Tamanho da fonte maior */
+    cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover no botão */
+#buttonLogin button:hover {
+    background-color: #45a049; /* Cor mais escura do botão ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 500px) {
+    form {
+        width: 90%; /* O formulário ocupa 90% da largura em telas pequenas */
+        padding: 20px; /* Menos padding em telas pequenas */
+    }
+
+    h3 {
+        font-size: 1.6em; /* Reduz o tamanho do título em telas pequenas */
+    }
 }

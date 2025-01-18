@@ -1,27 +1,41 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    width: 90%;
-    height: 100%;
+body {
+    background-image: url("imagens/1920x1080-black-8rx8aa4dereq3jpl.jpg");
+    width: 100%; /* Ajuste para preencher toda a largura */
+    height: 100vh; /* Faz a altura da tela ser 100% da altura da janela */
+    display: flex; /* Usando flexbox para centralizar os itens */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+    font-family: Arial, sans-serif; /* Fonte mais agradável */
 }
 
-form{
-    width: 100px;
-    margin: 200px auto;
+#form-conteiner {
     text-align: center;
+    width: 300px; /* Definindo uma largura fixa para o formulário */
+    padding: 20px;
+    border: 1px solid #ccc; /* Adicionando uma borda para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Fundo claro */
 }
 
-input{
+h3 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 1.5em; /* Aumentando o tamanho da fonte do título */
+    font-weight: bold; /* Deixando o título em negrito */
+}
+
+input {
     display: block;
     margin: 10px auto;
-    width: 250px;
+    width: 100%; /* Fazendo os inputs ocuparem toda a largura disponível */
     height: 30px;
-}
-h3{
-    right: 30%;
-    top: 20%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
 }
